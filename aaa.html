@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+#parteum {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 50vw;
+    height: 50vh;
+    padding-top: 10%;
+}
+
+
+
+
+</style>
+<body>
+<nav class="menu">
+
+<ul> 
+ <li><a href="#pet-select">DROP DOWN</a></li>
+ <li><a href="#"> EXAMPLE 1</a></li>
+ <li><a href="#"> EXAMPLE 2</a></li>
+ <li><a href="#"> EXAMPLE 3</a></li>
+
+</ul>
+
+</nav>
+<main>
+    <div>
+    <form action="results.php" method="post">
+
+<div id="parteum">
+        <label for="name"> Primeiro nome </label>
+        <input type="text" name="name" id="name" placeholder="your name here">
+    
+    <label for="password"> Password </label> 
+        <input type="password" name="password" required>
+    
+    <label for="birthdate"> BIRTHDATE</label> 
+    <input type="date" name="birthdate" min="01-01-1900">
+    
+    <button type="submit" > SUBMIT </button> 
+    <div></div>
+    <br> 
+    </form>
+    <form action="results.php" method="GET">
+        <div>
+        <input type="radio" value="men" name="sex">
+        <label for="men"> MEN </label>
+    </div>
+<div>
+        <input type="radio" value="women" name="sex">
+        <label for="women"> WOMEN </label>
+</div>
+<div id="partedois">
+
+    <input type="checkbox" name="potato">
+    <label for="potato">POTATO</label>
+
+    
+    <input type="checkbox" name="apple" id="apple">
+    <label for="apple">APPLE</label>
+
+    <div> 
+
+    <select name="pets" id="pet-select">
+        <option value="">Please choose</option>
+        <option value="dog">DOG</option>
+        <option value="cat">CAT</option>
+        <option value="hamster">HAMSTER</option>
+    </select>
+    <button type="submit">SUBMIT</button>
+    <button type="reset">RERSET</button>
+</div>
+    </form>
+</div>
+
+
+</main>
+</body>
+
+<button id="botão" name="menu" value="menu">BOTÃO</button>
+
+<button id="link" name="menu" href="blog.html">LINK</button>
+</html>
